@@ -1,6 +1,6 @@
 import time
 
-alfabeto = 'abcdefghilmnopqrstuvz'
+alfabeto = 'abcdefghijklmnopqrstuvwxyz'
 ask_pos = input('Inserisci una lettera, ti dirò in che posizione si trova: ')
 ask_pos_lc = ask_pos.lower() #converto in minuscolo
 pos = 1
