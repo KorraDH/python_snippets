@@ -1,29 +1,23 @@
 # python_snippets
 I miei primi esercizi in Python
 
-Elenco snippets:
+#Elenco snippets:
 
-__> Sequenza Alfabeto__
-
+- **Sequenza Alfabeto**
 Chiede una lettera dell'alfabeto e restituisce la posizione in cui essa si trova.
--- input, ciclo for
+_input, ciclo for_
 
-
-__> 001 Max tra due__
-
+- **001 Max tra due**
 Chiede due numeri e restituisce il massimo tra i due
--- input, ciclo for
+_input, ciclo for_
 
-__> 002 Max tra tre__
-
+- **002 Max tra tre**
 Chiede tre numeri e restituisce il massimo tra i tre
--- input, ciclo for
+_input, ciclo for_
 
-__> 003 Max tra tutti__
-
+- **003 Max tra tutti**
 Chiede quanti numeri si voglino inserire, ne attende l'inserimento e restituisce il maggiore.
-*input multipli, cicli for*
+_input multipli, cicli for_
 
-__> 004 Sei una vocale ?__
-
+- **004 Sei una vocale**
 Chiede di inserire un carattere e dice se si tratta di una vocale o no. 
