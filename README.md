@@ -23,3 +23,7 @@ __> 003 Max tra tutti__
 
 Chiede quanti numeri si voglino inserire, ne attende l'inserimento e restituisce il maggiore.
 *input multipli, cicli for*
+
+__> 004 Sei una vocale ?__
+
+Chiede di inserire un carattere e dice se si tratta di una vocale o no. 
