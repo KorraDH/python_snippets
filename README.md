@@ -22,4 +22,4 @@ Chiede tre numeri e restituisce il massimo tra i tre
 __> 003 Max tra tutti__
 
 Chiede quanti numeri si voglino inserire, ne attende l'inserimento e restituisce il maggiore.
--- input multipli, cicli for
+*input multipli, cicli for*
