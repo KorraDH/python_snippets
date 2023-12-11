@@ -1,4 +1,4 @@
-#Esercizio 003 di https://www.programmareinpython.it/esercizi-python/
+#Esercizio 006 di https://www.programmareinpython.it/esercizi-python/
 
 #creo una lista vuota
 lista = []
@@ -12,10 +12,8 @@ for i in range(0, n):
     #aggiungo l'elemento alla lista
     lista.append(elemento)
 
-#calcolo il numero maggiore
-numero_maggiore = lista[0]
+#calcolo la moltiplicazione
+molt = 1
 for numero in lista:
-    if numero > numero_maggiore:
-        numero_maggiore = numero
-print('Il numero maggiore tra tutti è:', numero_maggiore)
-
+    molt = molt * numero
+print('La moltiplicazione è:', molt)
