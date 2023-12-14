@@ -30,3 +30,8 @@ _input multipli, cicli for_
 - **004 Sei una vocale**
 
 Chiede di inserire un carattere e dice se si tratta di una vocale o no. 
+
+- **011 Il frequenzimetro**
+
+Data una stringa indica quali lettere sono contenute in essa e per quqnte ricorrenze.
+Lo script definisce una funzione e la richiama; utile esempio per le **funzioni**.
