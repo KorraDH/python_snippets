@@ -11,7 +11,9 @@ def frequenzimetro(stringa):
 			matrix[carattere] = 1
 	return matrix
 
-risultato = frequenzimetro ('adskjdfhhfdihhih')
+stringa_input = input("Inserisci la stringa da anlizzare: ")
+
+risultato = frequenzimetro (stringa_input)
 
 print(risultato)
 #print(matrix.items())

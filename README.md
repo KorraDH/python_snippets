@@ -35,3 +35,5 @@ Chiede di inserire un carattere e dice se si tratta di una vocale o no.
 
 Data una stringa indica quali lettere sono contenute in essa e per quqnte ricorrenze.
 Lo script definisce una funzione e la richiama; utile esempio per le **funzioni**.
+
+_input, cicli for, funzioni, richiamo funzioni_
