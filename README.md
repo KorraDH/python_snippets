@@ -37,3 +37,7 @@ Data una stringa indica quali lettere sono contenute in essa e per quqnte ricorr
 Lo script definisce una funzione e la richiama; utile esempio per le **funzioni**.
 
 _input, cicli for, funzioni, richiamo funzioni_
+
+- **uploadFTP**
+
+Script per fare upload di file su FTP
