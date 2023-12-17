@@ -1,0 +1,8 @@
+#Esercizio 017 di https://www.programmareinpython.it/esercizi-python/
+#Scrivi una funzione che, dato un carattere in ingresso, restituisca in output il codice ASCII associato al carattere passato.
+
+carattere = input("Inserisci un carattere: ")
+valore = ord(carattere)
+
+print(f"Il valore ascii è {valore}")
+
