@@ -45,6 +45,19 @@ Utile esempio per i **dizionari**.
 
 _dizionari, funzioni, richiamo funzioni_
 
+- **022 Gestione login**
+
+Legge e scrive su un file di testo contenente alcuni dati sui login degli utenti. 
+Utile esempio per la gestione dei **file csv**.
+
+_lettura e scrittura file csv, dizionari_
+
+- **023 Testi canzoni**
+
+Chiede il titolo della canzone ed il testo. Salva un nome file chiamato con il titolo e contenente il testo. 
+Utile esempio per la gestione dei **file csv**.
+
+_lettura e scrittura file di testo_
 
 - **uploadFTP**
 
