@@ -38,6 +38,14 @@ Lo script definisce una funzione e la richiama; utile esempio per le **funzioni*
 
 _input, cicli for, funzioni, richiamo funzioni_
 
+- **021 La segreteria**
+
+Popola un dizionario con degli studenti ed i loro voti. Viene poi restituito l'elenco degli studenti con la loro media voto. 
+Utile esempio per i **dizionari**.
+
+_dizionari, funzioni, richiamo funzioni_
+
+
 - **uploadFTP**
 
 Script per fare upload di file su FTP
