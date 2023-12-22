@@ -55,9 +55,24 @@ _lettura e scrittura file csv, dizionari_
 - **023 Testi canzoni**
 
 Chiede il titolo della canzone ed il testo. Salva un nome file chiamato con il titolo e contenente il testo. 
-Utile esempio per la gestione dei **file csv**.
+Utile esempio per la gestione dei **file di testo**.
 
 _lettura e scrittura file di testo_
+
+- **024 Il sistema solare**
+
+Data una tupla contenente dei tris di valori la stampa e poi fa la somma sul numerico. 
+Utile esempio per la gestione delle **tuple**.
+
+_tuple, liste_
+
+- **025 Sport di squadra**
+
+Dati due SET di sport, rispettivamente individuali e di squadra, chiede di inserire uno sport e restituisce se è di squadra o individuale. 
+Utile esempio per la gestione dei **set**.
+
+_set_
+
 
 - **uploadFTP**
 
