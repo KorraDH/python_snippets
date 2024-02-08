@@ -22,15 +22,14 @@ def login():
 frame1 = tk.Frame(finestra, background='red', padx=10, pady=10, height=100, width=400)
 frame2 = tk.Frame(finestra, background='yellow', padx=10, pady=10, height=100, width=400)
 frame3 = tk.LabelFrame(finestra, background='orange', text='Sono un LabelFrame', padx=10, pady=10, height=100, width=400)
-frame1.pack(fill='both', expand=True)
+frame1.pack(fill='y', side='left') #se non dico niente va sotto, altrimenti, con "side='left' lo posiziono a sx
 frame2.pack(fill='both', expand=True)
 frame3.pack(fill='both', expand=True)
-#frame1.pack(fill='x', expand=True) #espando la dimensione come tutta la finestra in orizzontale
 
 # creo widget e li assegno ai frame creati pocanzi
-button1 = tk.Button(frame1, text='Ciao!')
-button2 = tk.Button(frame2, text='Salve!')
-button3 = tk.Button(frame3, text='Arrivederci!')
+button1 = tk.Button(frame1, text='Frame1')
+button2 = tk.Button(frame2, text='Frame2')
+button3 = tk.Button(frame3, text='Frame3')
 
 button1.pack()
 button2.pack()

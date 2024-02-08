@@ -3,6 +3,8 @@ I miei primi esercizi in Python
 
 # Elenco snippets:
 
+## Generici:
+
 - **Sequenza Alfabeto**
 
 Chiede una lettera dell'alfabeto e restituisce la posizione in cui essa si trova.
@@ -77,3 +79,65 @@ _set_
 - **uploadFTP**
 
 Script per fare upload di file su FTP
+
+## Tkinter:
+
+- **Esempio 001**
+
+Esempi vari sui moduli Tkinter
+
+_finestre, label, bottoni_
+
+- **Esempio 002**
+
+Esempi vari sui moduli Tkinter
+
+_RadioButton_
+
+- **Esempio 003**
+
+Esempi vari sui moduli Tkinter
+
+_Entry, Combobox_
+
+- **Esempio 004**
+
+Esempi vari sui moduli Tkinter
+
+_Gestione Frame_
+
+- **Esempio 005**
+
+Esempi vari sui moduli Tkinter
+
+_Gestione layout finestre con metodo pack_
+
+- **Esempio 006**
+
+Esempi vari sui moduli Tkinter
+
+_Gestione layout finestre con metodo grid_
+
+- **Esempio 007**
+
+Creo un layout simile a VSCODE
+
+_Gestione layout complessi e Menubar_
+
+- **Esempio 008**
+
+Esempi vari sui moduli Tkinter
+
+_Listbox, Scrollbar, Scrolltext_
+
+- **Esempio 009**
+
+Esempi vari sui moduli Tkinter
+
+_Gestione Notebook (Tab)_
+
+- **Esempio 010**
+
+Esempi vari sui moduli Tkinter
+
+_Gestione Treeview (Tabelle)_
