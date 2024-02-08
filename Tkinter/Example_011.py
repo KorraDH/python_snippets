@@ -1,8 +1,9 @@
 ## Canale Youtube di Edoardo Midali (codegrind.it)
-## Creazione di un menu contestuale
+## Creazione di un menu contestuale e messagebox
 
 from tkinter import *
 from tkinter import ttk
+from tkinter import messagebox
 
 #--> FINESTRA PRINCIPALE
 finestra = Tk()
@@ -20,10 +21,34 @@ cont_menu = Menu(finestra, tearoff=0)
 cont_menu.add_command(label="Taglia")
 cont_menu.add_command(label="Copia")
 cont_menu.add_command(label="Incolla")
+cont_menu.add_command(label="Info", 
+                      command=lambda: messagebox.showinfo(title='Messaggio di informazione', message='Ecco l\'informazione')
+                      )
+cont_menu.add_command(label="Warning", 
+                      command=lambda: messagebox.showwarning(title='Messaggio di warning', message='Ecco l\'informazione')
+                      )
+cont_menu.add_command(label="Errore", 
+                      command=lambda: messagebox.showerror(title='Messaggio di errore', message='Ecco l\'informazione')
+                      )
 cont_menu.add_separator
 cont_menu.add_command(label="Esci", command=(finestra.quit))
 
-# creao la funzione che lo fa apparire a schermo
+def show_message():
+    risposta = messagebox.askyesno(title='Messaggio', message='Ti piace la pizza ?')
+    # i più frequenti tipi di message box possono essere
+    #askyesno
+    #askyesnocancel
+    #askokcancel
+    #askretrycancel
+
+    if risposta:
+        print('Anche a me piace')
+    else:
+        print('Peccato, dovrebbe!')
+
+mostra_messaggio = Button(text='Mostra messaggio', command=show_message).pack()
+
+# creo la funzione che lo fa apparire a schermo
 def cont_menu_popup(event):
     try:
         cont_menu.tk_popup(event.x_root, event.y_root)

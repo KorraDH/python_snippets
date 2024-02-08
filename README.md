@@ -146,4 +146,10 @@ _Gestione Treeview (Tabelle)_
 
 Esempi vari sui moduli Tkinter
 
-_Gestione menu contestuali_
+_Gestione menu contestuali e messagebox_
+
+- **Esempio 012**
+
+Esempi vari sui moduli Tkinter
+
+_Lavorare con i file_
