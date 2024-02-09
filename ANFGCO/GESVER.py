@@ -1,0 +1,105 @@
+import tkinter as tk
+from tkinter import ttk
+from tkinter import filedialog
+
+versione = 'versione 0.1 del 09-02-2024'
+
+def importa_file():
+    window_importa = tk.Toplevel(root)
+    window_importa.title("Importa file da terminalino")
+    window_importa.geometry('640x480')
+    
+    def seleziona_file():
+        # definisco le estensioni possibili
+        file_types = [("File di testo", "*.txt *.csv")]
+
+        # chiedo di selezionare un file con le estensioni possibili
+        filename = filedialog.askopenfilename(title='Seleziona un file', initialdir="/home", filetypes=file_types)
+        
+        # apro il file in lettura, metto i dati nella variabile data e li stampo
+        f = open(filename, 'r')
+        data = f.read()
+        ent_nomefile.delete(0, tk.END)
+        ent_nomefile.insert(0, filename)
+        
+    lbl_ins_path = tk.Label(text="Indica o seleziona il percorso del file")
+    ent_nomefile = tk.Entry(window_importa, width=50)
+    btn_importa = tk.Button(window_importa, text='Apri file', command=seleziona_file)
+    
+    lbl_ins_path.grid(column=0, row=0, padx=5, pady=5)
+    ent_nomefile.grid(column=0, row=1, padx=5, pady=5)
+    btn_importa.grid(column=1, row=1, padx=5, pady=5)
+    
+
+    # bind per uscire dalla maschera
+    def on_key_press(event):
+        if event.keysym == "Escape":
+            window_importa.destroy()
+    window_importa.bind("<KeyPress>", on_key_press)
+
+
+def help():
+    window_help = tk.Toplevel(root)
+    window_help.title("Informazioni sull'applicazione")
+    
+    lbl_immagine = tk.Label(window_help, image=ico_programma)
+    lbl_titolo = tk.Label(window_help, text="Gestione verifiche capoturni")
+    lbl_versione = tk.Label(window_help, text=versione)
+    lbl_crediti = tk.Label(window_help, text="Copyright Corrado Bigliardi\n Iter Innovation")
+
+    lbl_immagine.grid(column=0, row=0 ,padx=5, pady=20)
+    lbl_titolo.grid(column=0, row=1, padx=5, pady=5)
+    lbl_versione.grid(column=0, row=2, padx=5, pady=5)
+    lbl_crediti.grid(column=0, row=3, padx=5, pady=5)
+
+    # bind per uscire dalla maschera
+    def on_key_press(event):
+        if event.keysym == "Escape":
+            window_help.destroy()
+    window_help.bind("<KeyPress>", on_key_press)
+
+#--> FINESTRA PRINCIPALE
+root = tk.Tk()
+root.title('Gestione Verifiche Capoturni')
+root.geometry('1366x768')
+ico_programma = tk.PhotoImage(file='ANFGCO/Ghaphics/screwdriver.png')
+root.iconphoto(True, ico_programma)
+
+# definisco la griglia
+root.columnconfigure(0, weight=1)
+root.rowconfigure(0, weight=1) 
+root.rowconfigure(1, weight=4)
+
+# definisco i frame
+filtri = tk.LabelFrame(root, text="Filtri", borderwidth=2)
+griglia = tk.LabelFrame(root, text='Risultato', borderwidth=2)
+
+# assegno i frame alla griglia
+filtri.grid(column=0, row=0, sticky=(tk.W, tk.E, tk.N, tk.S), padx=5, pady=5)
+griglia.grid(column=0, row=1, sticky=(tk.W, tk.E, tk.N, tk.S), padx=5, pady=5)
+
+# aggiungo la menu bar
+menubar = tk.Menu(root)
+root.config(menu=menubar)
+# poi creo le voce di menù
+menu_file = tk.Menu(menubar, tearoff=0) # con il parametro tearoff=0 elimino la prima riga in alto
+menu_help = tk.Menu(menubar)
+
+# assegno alle voci al menu
+menubar.add_cascade(label='File', menu=menu_file)
+menubar.add_cascade(label='Help', menu=menu_help)
+
+# creo i comandi sotto alle voci di menu
+menu_file.add_command(label='Importa file da terminalino', command=importa_file)
+menu_file.add_separator()
+menu_file.add_command(label='Esci', command=root.quit)
+
+menu_help.add_command(label='Informazioni sul programma', command=help)
+
+# bind per uscire dalla maschera
+def on_key_press(event):
+    if event.keysym == "Escape":
+        root.quit()
+root.bind("<KeyPress>", on_key_press)
+
+root.mainloop()

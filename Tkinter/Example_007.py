@@ -28,8 +28,15 @@ frame2 = tk.LabelFrame(finestra, text='File', borderwidth=2, height=200, width=2
 frame3 = tk.LabelFrame(finestra, text='Testo', borderwidth=2, height=200, width=200)
 frame4 = tk.LabelFrame(finestra, text='Output', borderwidth=2, height=200, width=200)
 
+# creo le sotto-finestre che posso aprire direttamente da menu
+def apri_finestra_dati():
+    finestra_dati=tk.Toplevel(frame3)
+    finestra_dati.title('Finestra embedded')
+    etichetta2 = tk.Label(text='etichetta di test')
+    etichetta2.pack(padx=5, pady=5)
+
 # creo anche una menubar, dapprima creo il menù e lo assegno alla finestra principale
-menubar = tk.Menu(finestra) # con il parametro tearoff=0 elimino la prima riga in alto
+menubar = tk.Menu(finestra)
 finestra.config(menu=menubar)
 # poi creo le voce di menù
 file_menu = tk.Menu(menubar, tearoff=0) # con il parametro tearoff=0 elimino la prima riga in alto
@@ -47,7 +54,7 @@ file_menu.add_command(label='Open')
 
 # decido di fare un sottomenu
 file_altro_submenu = tk.Menu(file_menu, tearoff=0)
-file_altro_submenu.add_command(label='Ciao')
+file_altro_submenu.add_command(label='Vedi dati', command=apri_finestra_dati)
 file_altro_submenu.add_command(label='Salve')
 file_menu.add_cascade(label='Altro', menu=file_altro_submenu)
 
