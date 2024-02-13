@@ -153,3 +153,9 @@ _Gestione menu contestuali e messagebox_
 Esempi vari sui moduli Tkinter
 
 _Lavorare con i file_
+
+- **Test SQL Connection**
+
+Funzione che testa la connessione ad un database
+
+_pyodbc, database_
